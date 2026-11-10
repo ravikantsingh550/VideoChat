@@ -12,7 +12,7 @@ import userRoutes from "./src/routes/userRoutes.js";
 const url = process.env.MONGO_URL;
 const app = express();
 const server = createServer(app);
-const io = connectToSocket(server );
+const io = connectToSocket(server);
 
 app.set("port" , (process.env.PORT || 8000));
 app.use(cors());
